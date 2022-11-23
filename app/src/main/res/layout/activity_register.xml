@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/register"
+        android:padding="15dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:textColor="@color/black"
+        android:textSize="35sp"
+        android:fontFamily="@font/roboto_bold"/>
+
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/animationView"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_below="@+id/sign"
+            android:layout_marginTop="20dp"
+            android:padding="10dp" />
+
+
+    </LinearLayout>
+
+
+   <LinearLayout
+       android:layout_centerInParent="true"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+       android:orientation="vertical">
+
+       <LinearLayout
+           android:layout_marginStart="10dp"
+           android:layout_marginEnd="10dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content">
+
+         <EditText
+             android:id="@+id/edtCode"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:text="+91"
+             android:inputType="number"
+             android:maxLength="3"
+             />
+
+
+           <View
+               android:layout_marginEnd="15dp"
+               android:layout_marginStart="15dp"
+               android:layout_marginBottom="6dp"
+               android:layout_marginTop="5dp"
+               android:background="#D6E4E5"
+               android:layout_width="1dp"
+               android:layout_height="match_parent"/>
+
+
+       <EditText
+           android:inputType="number"
+           android:id="@+id/edtMobile"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Mobile"
+           android:maxLength="10"
+           />
+
+       </LinearLayout>
+
+       <androidx.appcompat.widget.AppCompatButton
+           android:id="@+id/btnRegister"
+           android:layout_marginStart="15dp"
+           android:layout_marginEnd="15dp"
+           android:layout_marginTop="30dp"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:text="Submit"
+           android:fontFamily="@font/roboto_medium"
+           android:textColor="@color/white"
+           android:background="#03A9F4"/>
+
+
+
+
+   </LinearLayout>
+
+</RelativeLayout>
